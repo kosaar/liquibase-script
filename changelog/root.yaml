@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - preConditions:
+      onFail: WARN
+      onError: WARN
+  - include:
+      file: script/schema.postgresql.sql
+      relativeToChangelogFile: true
+      errorIfMissingOrEmpty: false
+  - include:
+      file: script/data.postgresql.sql
+      relativeToChangelogFile: true
+      errorIfMissingOrEmpty: false
+  - include:
+      file: script/constraint.postgresql.sql
+      relativeToChangelogFile: true
+      errorIfMissingOrEmpty: false
+  - includeAll:
+      path: script/sql
+      relativeToChangelogFile: true
+      errorIfMissingOrEmpty: false
