@@ -42,17 +42,17 @@ les élèments de configuration sont reparti en 3 groupes:
 
 3. Selon le type de sauvegarde, il est possible de sauvegarder:
    * la totalité de la BDD (schema + contrainte + donnée) avec la commande suivante :
-        > p4p-liquibase\Liquibase_service.bat dump
+        > **Liquibase_service.bat dump**
 
     * ou par partie avec un découpage (schema, contraintes et données):
        * commande pour sauvegarder uniquement le schema (tables + colonnes): 
-            > p4p-liquibase\Liquibase_service.bat dump --table
+            > **Liquibase_service.bat dump --table**
 
        * commande pour sauvegarder pour les contraintes (clés primaires, étrangères, indexes):
-            > p4p-liquibase\Liquibase_service.bat dump --constraint
+            > **Liquibase_service.bat dump --constraint**
 
        * commande pour sauvegarder pour les données:
-            > p4p-liquibase\Liquibase_service.bat dump --data
+            > **Liquibase_service.bat dump --data**
 
 Le resultat est placé dans le repertoire **changelog\script** du projet. Ce dernier contient les fichiers sql resultant de la sauvegarde.
 
@@ -75,17 +75,17 @@ C'est un fichier spécial qui sert de référence pour la restoration des sauveg
 
 3. Enn fonction du paramètre de restoration, il est possible de restorer:
    * la totalité de la BDD (schema + contrainte + donnée) :
-        > Commande: p4p-liquibase\Liquibase_service.bat restore
+        > **Liquibase_service.bat restore**
 
     * ou par partie avec un découpage (schema, contraintes et données):
        * Restorer uniquement le schema (tables + colonnes): 
-            > Commande: p4p-liquibase\Liquibase_service.bat restore --table
+            > **Liquibase_service.bat restore --table**
 
        * Restorer uniquement les contraintes (clés primaires, étrangères, indexes):
-            > Commande: p4p-liquibase\Liquibase_service.bat restore --constraint
+            > **Liquibase_service.bat restore --constraint**
 
        * Restorer uniquement les données:
-            > Commande: p4p-liquibase\Liquibase_service.bat restore --data
+            > **Liquibase_service.bat restore --data**
 
 4. Vérifier le resultat de la commande en se connectant à la BDD configurée à l'étape 1.
 
@@ -102,8 +102,8 @@ Pour les versions Postgresql < 9.5 mieux vaut utiliser la version 3 (paramètre 
 
 Pour connaitre à tout moment la version de liquibase utilisé par le script, utiliser une des commandes suivantes:
 
-    > p4p-liquibase\Liquibase_service.bat
+    > **Liquibase_service.bat**
                 ou
-    > p4p-liquibase\Liquibase_service.bat -v
+    > **Liquibase_service.bat -v**
                 ou
-    > p4p-liquibase\Liquibase_service.bat --version
+    > **Liquibase_service.bat --version**
