@@ -1,6 +1,6 @@
-# Projet Liquibase
+# Projet Liquibase-script
 
-Le projet est constitué de dossiers suivants:
+Le projet est constitué des dossiers suivants:
  * Le dossier **bin** contient les utilitaires nécessaires pour le traitement.
  * Le dossier **changelog** => contient le changelog généré par les commandes de **dump** et **restore**.
  * Le dossier **doc** => contient une documentation sommaire de Liquibase
