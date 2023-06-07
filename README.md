@@ -4,13 +4,13 @@ Le projet est constitué des dossiers suivants:
  * Le dossier **bin** contient les utilitaires nécessaires pour le traitement.
  * Le dossier **changelog** => contient le changelog généré par les commandes de **dump** et **restore**.
  * Le dossier **doc** => contient une documentation sommaire de Liquibase
- * Le dossier **liquibase** => contient les versions utilisées de liquibase ( la version 3 est utilisée notamment pour la BDD R&D qui ne fonctionne pas bien avec la version 4 ).
+ * Le dossier **liquibase** => contient les versions utilisées de liquibase 
 
 ## Fichier de configuration
 
 Le fichier **config.properties** contient la configuration nécessaire pour Liquibase. Il n'est pas directement exploitable par les différentes versions de liquibase du projet.
 
->Il est toutefois nécessaire pour le parametrage du script batch **Liquibse_service.bat** qui gère le basculement entre les différents versions de liquibase contenu dans le projet.
+> _Nota_: Le fichier **config.properties** est toutefois nécessaire pour le parametrage du script batch **Liquibse_service.bat** qui gère le basculement entre les différents versions de liquibase contenu dans le projet.
 
 les élèments de configuration sont reparti en 3 groupes:
 * groupe 1: Ce groupe contient les mots clés suivantx et décrit la BDD modifiée par le script batch:
@@ -35,7 +35,7 @@ les élèments de configuration sont reparti en 3 groupes:
     * referencePassword=<password>
   
 
-2. Selectionner la version de liquibase à utilisée 
+2. Selectionner la version de liquibase à utiliser
    >    3 => (Postgresql < v9.5) ou   4 => (Postgresql >= v9.5)
     * liquibaseVersion=4
 
